@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workplace Assistant Agent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <div class="avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                        <path d="M12 12 2.1 7.1"></path>
+                        <path d="M12 12l9.9 4.9"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h1>Workplace Assistant</h1>
+                    <span class="status">Online • LangGraph Agent</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="chat-container" id="chatContainer">
+            <div class="message-wrapper assistant">
+                <div class="message-bubble">
+                    Hello! I'm your workplace assistant. I can help you with HR policies, calculate expenses, and even process refunds. How can I help you today?
+                </div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <form id="chatForm" class="input-area">
+                <input type="text" id="userInput" placeholder="Ask a question or request a refund..." autocomplete="off" required>
+                <button type="submit" id="sendButton">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </form>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>

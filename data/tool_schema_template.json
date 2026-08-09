@@ -1,0 +1,31 @@
+{
+  "instructions": "Homework template. Fill this in for a workplace agent of your choice. Define each tool the agent may use, and the safety rules that govern it. A good schema is precise: the description is what the model reads to decide whether to call the tool, and 'requires_human_approval' is your main safety lever.",
+  "agent_name": "",
+  "agent_purpose": "",
+  "tools": [
+    {
+      "name": "example_search_orders",
+      "description": "Look up an order by its ID and return its status and total. Read-only.",
+      "parameters": {"order_id": "string — the order reference, e.g. 'ORD-4471'"},
+      "returns": "order status and total, or 'not found'",
+      "requires_human_approval": false,
+      "risk_level": "low"
+    },
+    {
+      "name": "",
+      "description": "",
+      "parameters": {},
+      "returns": "",
+      "requires_human_approval": null,
+      "risk_level": ""
+    }
+  ],
+  "safety_rules": [
+    "Example: never call a money-moving tool without explicit human approval.",
+    "Example: if a tool returns an error twice, stop and ask the user.",
+    "Example: never act on personal data the user is not authorised to access.",
+    ""
+  ],
+  "step_limit": 0,
+  "notes": ""
+}

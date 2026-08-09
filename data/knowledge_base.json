@@ -1,0 +1,11 @@
+{
+  "description": "A tiny internal knowledge base the agent's search tool looks things up in. Deliberately small and unambiguous so the agent's tool selection and answers are easy to check in class.",
+  "entries": [
+    {"id": "vat_rate", "topic": "VAT rate", "text": "The standard UK VAT rate is 20%. A reduced rate of 5% applies to some goods such as home energy. Some items are zero-rated."},
+    {"id": "leave_days", "topic": "annual leave", "text": "Full-time staff receive 25 days of annual leave per year, plus 8 UK public holidays."},
+    {"id": "mileage", "topic": "mileage rate", "text": "Business mileage in a personal car is reimbursed at 45p per mile for the first 10,000 miles, then 25p per mile."},
+    {"id": "expense_limit", "topic": "expense approval", "text": "Any single expense over £25, or monthly claims over £150, need line-manager approval before the expense is incurred."},
+    {"id": "remote_days", "topic": "remote working", "text": "Eligible staff may work remotely up to 3 days per week, subject to manager agreement."},
+    {"id": "device_loss", "topic": "lost device", "text": "Report a lost or stolen company device to the IT service desk within 4 hours of discovering the loss."}
+  ]
+}
